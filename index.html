@@ -1,0 +1,115 @@
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href='style.css' rel='stylesheet' type='text/css'>
+<title>Political tests</title>
+<link rel="icon" type="x-icon" href="icon.png">
+<link rel="shortcut icon" type="x-icon" href="icon.png">
+<script
+src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="script.js"></script>
+<meta charset="utf-8">
+</head>
+<body>
+  <div style="z-index: 15;">
+
+    <form class="regis" style="position: fixed;">
+      <div class="reg-auth">
+          <p style="margin: 20px; text-align: center;">Реєстрація</p>
+          <hr>
+          <div style="margin: 0 auto; text-align: center;">
+            <label for="email"><b>Введіть email</b></label><br>
+            <input type="text" placeholder="Enter Email" name="email"><br>
+            <label for="pwd"><b>Пароль</b></label><br>
+            <input type="password" placeholder="Enter Password" name="pwd"><br>
+            <label for="confirm"><b>Підтвердіть пароль</b></label><br>
+            <input type="password" placeholder="Confirm Password" name="confirm"><br>
+            <hr>
+          </div>
+          <div class="" style="display: flex; justify-content: center;">
+            <button type="submit" class="loginbtn btn-secondary"><strong>Register</strong></button>
+          </div>
+          <div class="signin" style="display: flex; justify-content: center; margin-top: 10px;">
+            <p>Вже маєте акаунт? <a href="#">Увійдіть</a>.</p>
+          </div>
+      </div>
+    </form>
+
+    <form class="auth" style="position: fixed;">
+      <div class="reg-auth">
+          <p style="margin: 20px; text-align: center;">Авторизація</p>
+          <hr>
+          <div style="margin: 0 auto; text-align: center;">
+            <label for="email"><b>Введіть логін</b></label><br>
+            <input type="text" placeholder="Enter Email" name="email"><br>
+            <label for="pwd"><b>Пароль</b></label><br>
+            <input type="password" placeholder="Enter Password" name="pwd"><br>
+            <hr>
+          </div>
+          <div class="" style="display: flex; justify-content: center;">
+            <button type="submit" class="loginbtn btn-secondary"><strong>Login</strong></button>
+          </div>
+      </div>
+    </form>
+  </div>
+  <div class="overlay">
+
+  </div>
+  <div class="pos-f-t">
+  <nav class="navbar navbar-dark bg-dark">
+  <button style="visibility: hidden;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div style="display: flex;">
+    <button class="btn btn-sm btn-outline-secondary regist" style="color:white;"type="submit">Зареєструватись</button>
+    <button class="btn btn-sm btn-outline-secondary signin" style="color:white;"type="submit">Увійти в систему</button>
+    <form class="form-inline my-2 my-lg-0" action="userpage.html">
+      <button class="btn btn-sm btn-outline-secondary" style="color:white;"type="submit">Увійдіть в особистий кабінет</button>
+    </form>
+  </div>
+  <div class="profile" style="display: flex; align-items: center;">
+    <p class="username" style="display:none; color:white; text-align: center;  margin-right: 20px;">Username</p>
+    <img src="value_images\profile.jpg" alt="" style="width: 50px; border-radius: 50%; margin-right: 50px;">
+    <!-- <p class="username" style="display:none; color:white; text-align: center;">Username</p> -->
+  </div>
+
+</nav>
+  </div>
+<div style="margin: 20px;">
+
+<h1>Політичні тести</h1>
+<hr>
+<button class="button" onclick="location.href='instructions.html';" style="font-size:36pt;">Політичні цінності</button>
+<button class="button" onclick="location.href='instructions2.html';" style="font-size:36pt; margin-top: 20px;">Політичні координати</button>
+<img src="values.svg" class="center"></img>
+
+<h2>Що таке політичні тести?</h2>
+    <p>Політичні тести - це, по суті, політична вікторина, яка намагається призначити відсотки для восьми різних політичних цінностей. Вам буде представлено висловлювання, а потім ви відповісте своєю думкою щодо висловлення, причому кожна відповідь трохи вплине на ваші бали. В кінці вікторини ваші відповіді будуть порівняні з максимально можливим для кожного значення, що дасть вам відсоток. Відповідайте чесно! <br /><br /></p>
+<h2>Що це за 8 цінностей?</h2>
+    <p>Є чотири незалежні осі - Економічна, Дипломатична, Державна та Суспільна - і кожна з них має дві протилежні цінності. Є наступні цінності:</p>
+    <p class="value-description"><b style="color:#d32f2f;">Рівність</b> (Економіка)<br/>
+Ті, хто має вищі показники рівності, вважають, що економіка повинна рівномірно розподіляти вартість серед населення. Вони, як правило, підтримують прогресивні податкові кодекси, соціальні програми, а за високих цінностей - соціалізм.</p>
+    <p class="value-description"><b style="color:#00796b;">Ринковість</b> (Економіка)<br/>
+      Ті, хто має вищі показники на ринку, вважають, що економіка повинна бути спрямована на швидке зростання. Вони, як правило, підтримують зниження податків, приватизацію, дерегуляцію та, при високих значеннях, капіталізм. </p>
+    <p class="value-description"><b style="color:#f57c00;">Нація</b> (Дипломатія)<br/>
+      Ті, хто має вищі бали нації, патріотичні та націоналістичні. Вони часто вірять в агресивну зовнішню політику, оцінюючи військові сили, силу, суверенітет, а при високих цінностях - територіальну експансію. </p>
+    <p class="value-description"><b style="color:#0288d1;">Глобалізм</b> (Дипломатія)<br/>
+Ті, хто має вищі бали глобалізму та космополітизму. Вони часто вірять у мирну зовнішню політику, наголошуючи на дипломатії, співпраці, інтеграції та, за високих цінностей, світовому уряду. </p>
+    <p class="value-description"><b style="color:#fbc02d;">Свобода</b> (Держава)<br/>
+Ті, хто має вищі показники свободи, вірять у сильні громадянські свободи. Вони схильні підтримувати демократію та виступати проти втручання держави в особисте життя. Зверніть увагу, що це стосується громадянських свобод, а не економічних свобод. </p>
+    <p class="value-description"><b style="color:#303f9f;">Влада</b> (Держава)<br/>
+Ті, хто має вищі бали влади, вірять у сильну державну владу. Вони, як правило, підтримують втручання держави в особисте життя, нагляд уряду та на високих цінностях, цензуру чи самодержавство. </p>
+    <p class="value-description"><b style="color:#689f38;">Традиція</b> (Суспільство)<br/>
+Ті, хто має вищі бали Традиції, вірять у традиційні цінності та суворе дотримання морального кодексу. Хоча це не завжди, вони зазвичай є релігійними і підтримують статус-кво або статус-кво попередньо. </p>
+    <p class="value-description"><b style="color:#7b1fa2;">Прогрес</b> (Суспільство)<br/>
+Ті, хто має вищі показники Прогресу, вірять у соціальні зміни та раціональність. Хоча це не завжди, вони, як правило, є світськими чи атеїстами і підтримують екологічні дії та наукові або технологічні дослідження. </p>
+</div>
+<footer style="background-color: black; width: 100%; height: 35px; color: white; text-align: center; line-height: 35px;">All rights reserved, 2021</footer>
+<script type="application/javascript"src="questions.js"></script>
+<script type="text/javascript">
+    document.getElementById("numOfQuestions").innerHTML = questions.length;
+</script>
+</body>
