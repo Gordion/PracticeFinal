@@ -22,15 +22,15 @@ crossorigin="anonymous"></script>
           <hr>
           <div style="margin: 0 auto; text-align: center;">
             <label for="email"><b>Введіть email</b></label><br>
-            <input type="text" placeholder="Enter Email" name="email"><br>
+            <input class="reg-email" type="text" placeholder="Enter Email" name="email"><br>
             <label for="pwd"><b>Пароль</b></label><br>
-            <input type="password" placeholder="Enter Password" name="pwd"><br>
-            <label for="confirm"><b>Підтвердіть пароль</b></label><br>
-            <input type="password" placeholder="Confirm Password" name="confirm"><br>
+            <input class="reg-password" type="password" placeholder="Enter Password" name="pwd"><br>
+            <!-- <label for="confirm"><b>Підтвердіть пароль</b></label><br>
+            <input type="password" placeholder="Confirm Password" name="confirm"><br> -->
             <hr>
           </div>
           <div class="" style="display: flex; justify-content: center;">
-            <button type="submit" class="loginbtn btn-secondary"><strong>Register</strong></button>
+            <button type="submit" class="loginbtn btn-secondary" id="reg-button"><strong>Register</strong></button>
           </div>
           <div class="signin" style="display: flex; justify-content: center; margin-top: 10px;">
             <p>Вже маєте акаунт? <a href="#">Увійдіть</a>.</p>
@@ -44,13 +44,13 @@ crossorigin="anonymous"></script>
           <hr>
           <div style="margin: 0 auto; text-align: center;">
             <label for="email"><b>Введіть логін</b></label><br>
-            <input type="text" placeholder="Enter Email" name="email"><br>
+            <input class="auth-email" type="text" placeholder="Enter Email" name="email"><br>
             <label for="pwd"><b>Пароль</b></label><br>
-            <input type="password" placeholder="Enter Password" name="pwd"><br>
+            <input class="auth-password" type="password" placeholder="Enter Password" name="pwd"><br>
             <hr>
           </div>
           <div class="" style="display: flex; justify-content: center;">
-            <button type="submit" class="loginbtn btn-secondary"><strong>Login</strong></button>
+            <button type="submit" class="loginbtn btn-secondary" id="login-button"><strong>Login</strong></button>
           </div>
       </div>
     </form>
@@ -67,7 +67,7 @@ crossorigin="anonymous"></script>
     <button class="btn btn-sm btn-outline-secondary regist" style="color:white;"type="submit">Зареєструватись</button>
     <button class="btn btn-sm btn-outline-secondary signin" style="color:white;"type="submit">Увійти в систему</button>
     <form class="form-inline my-2 my-lg-0" action="userpage.html">
-      <button class="btn btn-sm btn-outline-secondary" style="color:white;"type="submit">Увійдіть в особистий кабінет</button>
+      <button class="btn btn-sm btn-outline-secondary button-userpage" style="color:white;"type="submit">Увійдіть в особистий кабінет</button>
     </form>
   </div>
   <div class="profile" style="display: flex; align-items: center;">

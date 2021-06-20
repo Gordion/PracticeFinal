@@ -4,6 +4,12 @@
 <title>8values Results</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
+<script
+src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="script.js"></script>
 <meta charset="utf-8">
 <script>
   version = "Test Edition #1" //Remember to update this before making changes to the test itself!
@@ -48,7 +54,8 @@
 </div>
 <h2>Найближча відповідність: <span class="weight-300" id="ideology-label"></span></h2>
 <!-- <img src="" id="banner" style="display: none!important;"> -->
-<button class="button" onclick="location.href='index.html';">Назад</button> <br>
+<button class="button values-quiz save-quiz" data-quiz-type="Values">Зберегти</button> <br>
+<button class="button values-quiz" onclick="location.href='index.html';">Назад</button> <br>
 
 <script>
     function getQueryVariable(variable)

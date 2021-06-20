@@ -297,3 +297,7 @@ canvas {
 .polit-table {
   text-align: center;
 }
+
+.button-userpage {
+  display: none;
+}
