@@ -160,6 +160,7 @@ $(document).ready(function(){
       }),
     }).done(function (response) {
       console.log('Results saved', response);
+      location.href='index.html';
     });
   }
 
@@ -183,10 +184,10 @@ $(document).ready(function(){
           console.log(item);
           switch (item.type) {
             case 'Values':
-              addTableRow($('.values-table tbody'), item);
+              addTableRow('values', item);
               break;
             case 'Coords':
-              addTableRow($('.coords-table'), item);
+              addTableRow('coords', item);
               break;
             default:
               console.log('Item type unknown.');
@@ -197,13 +198,15 @@ $(document).ready(function(){
     });
   }
 
-  function addTableRow(table, item) {
+  function addTableRow(type, item) {
+    var table = $('.' + type + '-table tbody');
     const results = item.result.split('&').map(r => r.split('='));
+    let dateTimeNew = moment(item.date).format("D.MM.YYYY, HH:mm:ss");
     table.append(`
       <tr>
-        <td class="polit-table date">${item.date}</td>
+        <td class="polit-table date">${dateTimeNew}</td>
         ${results.map((r) => `<td class="polit-table value-${r[0]}">${r[1]}</td>`)}
-        <td class="polit-table link"><a href="https://gordion.github.io/PracticeFinal/results.html?${item.result}">Посилання</a></td>
+        <td class="polit-table link"><a href="./${type == 'values'? 'results' : 'results2' }.html?${item.result}">Посилання</a></td>
       </tr>
     `);
   }
